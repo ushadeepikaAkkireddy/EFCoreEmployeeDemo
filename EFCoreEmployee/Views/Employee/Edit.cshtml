@@ -1,0 +1,19 @@
+﻿@model EFCoreEmployee.Models.Employee
+<h2>Edit </h2>
+<form asp-action="Edit" asp-Controller="Employee" method="post">
+    <div class="form-group">
+        <label asp-for="Id" class="form-control" col-sm-2">Id</label>
+        <input asp-for="Id" class="form-control" col-sm-10 readonly="true" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Name"class="form-control" col-sm-2"> Name</label>
+        <input asp-for="Name" class="form-control" col-sm-10/>
+    </div>
+    <div class="form-group">
+        <label asp-for="Location" class="form-control col-sm-2">Location</label>
+        <input asp-for="Location" class="form-control" col-sm-10/>
+    </div>
+    <div>
+        <button type="submit" class="btb btn-success" >Update</button>
+    </div>
+</form>
